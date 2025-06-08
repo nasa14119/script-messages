@@ -1,4 +1,7 @@
-phones = ["5627116282", "5561319352", "5627116282", "5561319352"]
+from src.utils import get_phones
+
+phones = get_phones()
+# phones = ["5627116282", "5561319352", "5627116282", "5561319352"]
 
 
 class Index:

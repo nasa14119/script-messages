@@ -26,9 +26,9 @@ def on_change():
         new_value = 1 if opt == "n" else -1
         try:
             current_index.change_value(new_value)
-            open_whatapp(current_index.phone)
         except:
-            pass
+            return
+        open_whatapp(current_index.phone)
 
     open_whatapp(current_index.phone)
     return apply
