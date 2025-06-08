@@ -2,7 +2,6 @@ import os
 import platform
 import subprocess
 import webbrowser
-from src.const import phones
 from src.const import current_index
 
 
@@ -22,15 +21,14 @@ def on_change():
     def apply(opt):
         global current_index
         if opt == "o":
-            open_whatapp(phones[current_index.value])
+            open_whatapp(current_index.phone)
             return
         new_value = 1 if opt == "n" else -1
         try:
             current_index.change_value(new_value)
-            phone = phones[current_index.value]
-            open_whatapp(phone)
+            open_whatapp(current_index.phone)
         except:
             pass
 
-    open_whatapp(phones[0])
+    open_whatapp(current_index.phone)
     return apply
