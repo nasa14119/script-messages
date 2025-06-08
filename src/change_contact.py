@@ -2,8 +2,8 @@ import os
 import platform
 import subprocess
 import webbrowser
-from const import phones
-from const import current_index
+from src.const import phones
+from src.const import current_index
 
 
 def on_change():

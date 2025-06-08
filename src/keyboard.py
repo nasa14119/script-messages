@@ -1,11 +1,13 @@
-from change_contact import on_change
+from src.change_contact import on_change
 from pynput import keyboard
-from const import isEditing
+from src.const import isEditing
+
+controller = keyboard.Controller()
 
 
 def lisener():
+    global controller
     change = on_change()
-    controller = keyboard.Controller()
 
     def delete():
         controller.press(keyboard.Key.backspace)
