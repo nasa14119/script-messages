@@ -1,0 +1,14 @@
+[
+  {
+    "type": "IMG",
+    "body": "/Users/nicolasamaya/Downloads/WhatsApp Image 2025-06-06 at 10.44.26.jpeg"
+  },
+  {
+    "type": "text",
+    "body": "Something long witch no var"
+  },
+  {
+    "type": "text_var",
+    "body": "something and a var [nombre]"
+  }
+]
