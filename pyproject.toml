@@ -6,6 +6,9 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "pandas>=2.3.0",
+    "pillow>=11.2.1",
     "pynput>=1.8.1",
+    "pyperclip>=1.9.0",
+    "pyperclipimg>=0.2.0",
     "webdriver-manager>=4.0.2",
 ]

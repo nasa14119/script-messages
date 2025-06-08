@@ -4,5 +4,6 @@
     "path": "data.csv",
     "start": 373,
     "end": 468
-  }
+  },
+  "vars": ["nombre_responsable", "nombre"]
 }

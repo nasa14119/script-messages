@@ -1,6 +1,7 @@
 from src.change_contact import on_change
 from pynput import keyboard
 from src.const import isEditing
+from src.messages import messages
 
 controller = keyboard.Controller()
 
@@ -45,8 +46,8 @@ def lisener():
                 change("n")
             case "p" | "a":
                 change("p")
+            case "s":
+                messages.send()
 
-    # listener = keyboard.Listener(on_press=on_key_down, on_release=on_release)
-    # listener.start()
     with keyboard.Listener(on_press=on_key_down, on_release=on_release) as listener:
         listener.join()
