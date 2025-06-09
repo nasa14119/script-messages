@@ -115,6 +115,7 @@ class Message:
             enter()
             sleep(1)
             pc.copy("")
+        enter()
 
 
 messages = Message()
